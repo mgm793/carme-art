@@ -1,0 +1,12 @@
+
+.header{
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title{
+  color: Black;
+  font-size: 3rem;
+}
