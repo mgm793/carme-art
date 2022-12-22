@@ -1,15 +1,17 @@
 import '../styles/index.css'
-import { Montserrat } from '@next/font/google';
-import { Header } from '../components/Header';
 
-const montserrat = Montserrat();
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className={montserrat.className}>
+    <>
       <Header />
       <Component {...pageProps} />
-    </div>
+      <Footer />
+    </>
   )
 }
   

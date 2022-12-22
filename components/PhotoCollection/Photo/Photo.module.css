@@ -3,6 +3,7 @@
   flex-direction: column;
   overflow: hidden;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .info{

@@ -2,9 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 import styles from './Photo.module.css';
 
-export const Photo = ({title, price, image}) => {
+export const Photo = ({title, price, image, onClick}) => {
 
-  return <div className={styles.container}>
+  return <div onClick={onClick} className={styles.container}>
     <Image 
       src={image.url} 
       alt={title} 
