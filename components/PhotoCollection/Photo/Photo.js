@@ -4,20 +4,22 @@ import styles from './Photo.module.css';
 
 export const Photo = ({title, price, image, onClick}) => {
 
-  return <div onClick={onClick} className={styles.container}>
-    <Image 
-      src={image.url} 
-      alt={title} 
-      loader={({src}) => src} 
-      width={300} 
-      height={300} 
-      placeholder="blur" 
-      blurDataURL='/images/placeholder.webp'
-    />
-   
-    <div className={styles.info}>
-      <h4>{title}</h4>
-      <p className={styles.price}>{price}€</p>
+  return (
+    <div onClick={onClick} className={styles.container}>
+      <Image 
+        src={image.url} 
+        alt={title} 
+        loader={({src}) => src} 
+        width={300} 
+        height={300} 
+        placeholder="blur" 
+        blurDataURL='/images/placeholder.webp'
+      />
+    
+      <div className={styles.info}>
+        <h4>{title}</h4>
+        <p className={styles.price}>{price}€</p>
+      </div>
     </div>
-  </div>;
+  );
 };
